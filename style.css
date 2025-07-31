@@ -1,0 +1,41 @@
+header{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    /* color: */
+}
+#navbar{
+    height:100px;
+    background-color: #212F45;
+    color:white;
+    font-size:60px;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+
+#hero_section{
+    display:flex;
+    justify-content: space-evenly;
+    padding:50px;
+}
+.Piano{
+    width:450px;
+    height:400px;
+    border-radius:10%;
+    background-color: #2d6a4f;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    font-size:50px;
+}
+.Tabla{
+    width:450px;
+    height:400px;
+    border-radius:10%;
+    background-color: #144552;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    font-size:50px;
+}
