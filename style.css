@@ -18,17 +18,31 @@ header{
 
 #navbar{
     height:100px;
-    background-image:url('background.png');
-    color:white;
     border-bottom:gray 1px solid; 
     font-size:60px;
     display:flex;
     justify-content: center;
     align-items:center;
-    /* border-top:1% solid gray; */
     background-size: cover;
+    background: linear-gradient(-45deg, #ff416c, #ff4b2b, #1e90ff, #00ff87);
+    background-size: 400% 400%;
+    animation: gradientMove 10s ease infinite;
+    padding: 15px;
+    color: white;
+    text-align: center;
 }
 
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 #intro{
     position:absolute;
     top:40%;
@@ -256,6 +270,35 @@ header{
     align-items: end;
     justify-content: space-evenly;
 
+}
+footer{
+    width:100%;
+    height:100px;
+    background-color: #eee;
+    color:#222;
+}
+.footer-content{
+    display:flex;
+    justify-content:space-around;
+    flex-wrap:wrap;
+}
+.footer-section{
+    margin:10px;
+    max-width:300px;
+}
+.footer-section h3{
+    border-bottom:1px solid #555;
+    padding-bottom:5px;
+}
+.footer-bottom{
+    margin-top:20px;
+    font-size:0.9em;
+    color:#aaa;
+}
+.para{
+    font-size:1.5rem;
+    z-index:1;
+    background: linear-gradient(-45deg, #ff416c, #ff4b2b, #1e90ff, #00ff87);
 }
 
 
