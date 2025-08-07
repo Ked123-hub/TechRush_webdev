@@ -6,54 +6,33 @@
     <title>SoundSpace Tabla</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body class="bodyT">
-    <div id="playt">
-        <div id="box1T">
-            <div class="t11">
-                <div class="t12">
-                </div>
-            </div>
-            
-        </div>
-        <div id="box2T">
-            <div class="t21">
-                <div class="t22"></div>
-            </div>
-            
-        </div>
-        </div>
+  <div id="playt">
+    
+    <div id="box13">
+      <div id="t11">
+        <div id="t12"></div>
+      </div>
     </div>
-    <script>
-  const tablaKeyMap = {
-    'q': 't11',
-    'w': 't12',
-    'o': 't21',
-    'p': 't22'
-  };
 
-  function triggerPressEffect(el) {
-    el.classList.add('pressed');
-    setTimeout(() => {
-      el.classList.remove('pressed');
-    }, 100);
-  }
+    
+    <div id="box23">
+      <div id="t21">
+        <div id="t22"></div>
+      </div>
+    </div>
+  </div>
 
-  document.addEventListener('keydown', function (e) {
-    const key = e.key.toLowerCase();
-    const className = tablaKeyMap[key];
-    if (className) {
-      const el = document.querySelector(`.${className}`);
-      if (el) triggerPressEffect(el);
-    }
-  });
+  
+<audio id="TabA" src="Tabla_A.mp3"></audio>
+<audio id="TabS" src="Tabla_S.mp3"></audio>
+<audio id="TabD" src="Tabla_D.mp3"></audio>
+<audio id="TabJ" src="Tabla_J.mp3"></audio>
+<audio id="TabK" src="Tabla_K.mp3"></audio>
+<audio id="TabL" src="Tabla_L.mp3"></audio>
 
-  ['t11', 't12', 't21', 't22'].forEach(cls => {
-    const el = document.querySelector(`.${cls}`);
-    if (el) {
-      el.addEventListener('mousedown', () => triggerPressEffect(el));
-    }
-  });
-</script>
-
+  <script src="tabla.js"></script>
 </body>
+
 </html>
