@@ -1,0 +1,161 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoundSpace Piano</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        user-select: none;
+    }
+    .box {
+        width: 50vw;
+        height: 60vh;
+        /* background-color: red; */
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3TeP3SDmLEbbRa7U9e1niUBGEMcw9VFQsHg&s");
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        position: relative;
+    flex-direction: column;
+    }
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        height: 100vh;  
+    }
+    #box1P,#box2P,#box3P,#box4P,#box5P,#box6P,#box7P{
+    width:50px;
+    height:250px;
+    background-color: white;
+    color:black;
+    border-radius:5px;
+    margin-left:0.2%;
+    /* position:relative; */
+    top:40%;
+    left:30%;
+    display:flex;
+    justify-content: center;
+    align-items:end;
+}
+.black{
+    width:2rem;
+    height:140px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border-radius:5%;
+    display:flex;
+    justify-content: center;
+    align-items: end;
+    justify-content: space-evenly;
+}
+.bar {
+    width: 100%;
+    height: 80px;
+    background-color: brown;
+    background-image: url("https://t4.ftcdn.net/jpg/02/14/73/19/360_F_214731909_HJjnYXsyW9KkoP9S2E61ZqUSjAoXi8bp.jpg");
+    position: absolute;
+    top: 0;
+    z-index: 1;
+   border-radius: 10px 10px 0 0;
+   background-size: 100%;
+}
+
+.bodyP{
+    background-image: url('piano\ background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#box8P {
+position: absolute;
+    top: 0;
+    left: 7.5%;  
+}
+#box9P {
+position: absolute;
+    top: 0;
+    left: 24%;  
+}
+#box10P {
+position: absolute;
+    top: 0;
+    left: 53%;  
+}
+#box11P {
+position: absolute;
+    top: 0;
+    left: 66.5%;  
+}
+#box12P {
+position: absolute;
+    top: 0;
+    left: 81.5%;  
+}
+
+#playp {
+    display: flex;
+    position: relative;
+}
+
+.pressed {
+    transform: translateY(5px) scaleY(0.95);
+    box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.6);
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+#box1P.pressed, #box2P.pressed, #box3P.pressed, #box4P.pressed,
+#box5P.pressed, #box6P.pressed, #box7P.pressed {
+    background-color: #d9d9d9;
+}
+
+.black.pressed {
+    background-color: #444;
+}
+
+</style>
+<body class="bodyP">
+    <div class="box">
+        <div class="bar"></div>
+        <div id="playp">
+            <div class="white" id="box1P">A</div>
+            <div class="white" id="box2P">S</div>
+            <div class="white" id="box3P">D</div>
+            <div class="white" id="box4P">F</div>
+            <div class="white" id="box5P">G</div>
+            <div class="white" id="box6P">H</div>
+            <div class="white" id="box7P">J</div>
+            <div class="black" id="box8P">W</div>
+            <div class="black" id="box9P">E</div>
+            <div class="black" id="box10P">T</div>
+            <div class="black" id="box11P">Y</div>
+            <div class="black" id="box12P">U</div>
+        </div>
+    </div>
+
+   
+
+<script src="piano.js"></script>
+
+<audio id="audioA" src="Piano_A.mp3"></audio>
+<audio id="audioS" src="Piano_S.mp3"></audio>
+<audio id="audioD" src="Piano_D.mp3"></audio>
+<audio id="audioF" src="Piano_F.mp3"></audio>
+<audio id="audioG" src="Piano_G.mp3"></audio>
+<audio id="audioH" src="Piano_H.mp3"></audio>
+<audio id="audioJ" src="Piano_J.mp3"></audio>
+<audio id="audioW" src="Piano_W.mp3"></audio>
+<audio id="audioE" src="Piano_E.mp3"></audio>
+<audio id="audioT" src="Piano_T.mp3"></audio>
+<audio id="audioY" src="Piano_Y.mp3"></audio>
+<audio id="audioU" src="Piano_U.mp3"></audio>
+
+</body>
+</html>
+
+ 
